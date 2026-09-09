@@ -7,6 +7,7 @@ This is a small teaching implementation of the AlphaZero recipe for Tic-Tac-Toe.
 ```bash
 pip install -r requirements.txt
 python train.py
+python play.py
 ```
 
 ## File map
@@ -16,7 +17,10 @@ python train.py
 - `mcts.py`: Network-guided Monte Carlo Tree Search.
 - `baselines.py`: Random and rule-based opponent agents.
 - `train.py`: Self-play, training, evaluation, plots, and CSV output.
+- `play.py`: Small Tkinter board for playing against the trained agent.
 - `requirements.txt`: Required Python packages.
+
+After training creates `tictactoe_model.pt`, run `python play.py`. You play as X and the trained MCTS agent plays as O.
 
 ## Expected result
 

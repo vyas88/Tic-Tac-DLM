@@ -25,6 +25,7 @@ TRAIN_EPOCHS = 5
 BUFFER_GENERATIONS = 5
 EVAL_GAMES = 50
 TEMP_MOVES = 3
+MODEL_FILE = "tictactoe_model.pt"
 
 
 def seed_everything():
@@ -174,6 +175,7 @@ def main():
         writer = csv.writer(file)
         writer.writerow(["generation", "loss", "score_vs_random", "score_vs_heuristic"])
         writer.writerows(metrics)
+    torch.save(net.state_dict(), MODEL_FILE)
 
 
 if __name__ == "__main__":
