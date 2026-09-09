@@ -45,7 +45,6 @@ class TicTacToeApp:
         self.game.step(action)
         self.update_board()
         if not self.finish_if_over():
-            # A short delay lets the player see their move before the reply.
             self.root.after(200, self.computer_move)
 
     def computer_move(self):

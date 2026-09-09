@@ -2,7 +2,6 @@ import random
 
 
 def random_agent(game):
-    # Every legal action has the same chance of being chosen.
     return random.choice(game.legal_moves())
 
 
@@ -16,7 +15,6 @@ def heuristic_agent(game):
             if trial.check_winner() == player:
                 return action
 
-    # After urgent moves, prefer positions that are generally strongest.
     if 4 in legal_moves:
         return 4
     for action in (0, 2, 6, 8):

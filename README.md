@@ -6,7 +6,17 @@ This is a small teaching implementation of the AlphaZero recipe for Tic-Tac-Toe.
 
 ```bash
 pip install -r requirements.txt
+```
+
+Train a new model and generate the charts:
+
+```bash
 python train.py
+```
+
+Play against the trained agent in a small desktop window:
+
+```bash
 python play.py
 ```
 
@@ -20,7 +30,7 @@ python play.py
 - `play.py`: Small Tkinter board for playing against the trained agent.
 - `requirements.txt`: Required Python packages.
 
-After training creates `tictactoe_model.pt`, run `python play.py`. You play as X and the trained MCTS agent plays as O.
+`tictactoe_model.pt` is the saved PyTorch model, so it is correctly shown as a binary file by VS Code. You play as X and the trained MCTS agent plays as O. On macOS, Tkinter may print a deprecation warning when the game opens; it is harmless and does not affect play.
 
 ## Expected result
 
