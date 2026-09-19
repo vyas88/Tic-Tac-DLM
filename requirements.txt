@@ -1,3 +1,9 @@
+# Network layers, automatic differentiation, Adam, and saved model weights.
 torch
+# Board arrays, move probabilities, and MCTS exploration noise.
 numpy
+# Training score plots written by train.py.
 matplotlib
+
+# Other imports use the Python standard library. The desktop interface needs
+# a Python installation with Tkinter/Tk support; tkinter is not a pip package here.
